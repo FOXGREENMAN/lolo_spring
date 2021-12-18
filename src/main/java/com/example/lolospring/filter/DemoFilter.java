@@ -9,18 +9,18 @@ public class DemoFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-
+        System.out.println("----------- > ٩(ᐛ )و This is demo filter; Now init ~");
     }
 
     @Override
     public void destroy() {
-
+        System.out.println("----------- > ٩(ᐛ )و This is demo filter; Now destroy ~");
     }
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        System.out.println(" ----------- > ٩( ᐛ )و This is demo filter; Now start~ < -----------");
+        System.out.println(" ----------- > ٩(ᐛ )و This is demo filter; Now start~ < -----------");
         filterChain.doFilter(servletRequest, servletResponse);
-        System.out.println(" ----------- > ٩( ᐛ )و This is demo filter; Now end~  < -----------");
+        System.out.println(" ----------- > ٩(ᐛ )و This is demo filter; Now end~  < -----------");
     }
 }
